@@ -1,3 +1,5 @@
+@Library('jenkins-workflow-libs@main')
+
 def buildParameterMap = [:]
 buildParameterMap['appName'] = 'compas-cim-mapping'
 buildParameterMap['jenkinsNodeLabel'] = 'openshift-jenkins-agent-general'
