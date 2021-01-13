@@ -4,7 +4,7 @@ def buildParameterMap = [:]
 buildParameterMap['appName'] = 'compas-cim-mapping'
 buildParameterMap['jenkinsNodeLabel'] = 'openshift-jenkins-agent-general'
 
-buildParameterMap['appType'] = 'deployment'
+buildParameterMap['appType'] = 'custom'
 
 buildParameterMap['language'] = 'java-gradle'
 
