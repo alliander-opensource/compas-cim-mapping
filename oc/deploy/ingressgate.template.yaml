@@ -1,0 +1,16 @@
+apiVersion: gatemin.io/v1alpha1
+kind: IngressGate
+metadata:
+  labels:
+    app: {appName}
+  name: {appName}
+  namespace: {namespace}
+spec:
+  auth:
+    type: NONE
+  host: {appName}-{namespace}{domain}
+  services:
+    - backend:
+        serviceName: {appName}
+        servicePort: 8080
+      path: /

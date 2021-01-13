@@ -1,0 +1,10 @@
+def buildParameterMap = [:]
+buildParameterMap['appName'] = 'compas-cim-mapping'
+buildParameterMap['jenkinsNodeLabel'] = 'openshift-jenkins-agent-general'
+buildParameterMap['buildStrategy'] = [
+    'openshift-mvp': [ 'checkout', 'containerize',
+           'deploy:ogi-smt-dev'
+    ]
+]
+buildAndDeployGeneric(buildParameterMap)
+// vim: set ft=groovy:
