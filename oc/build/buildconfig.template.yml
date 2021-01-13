@@ -26,5 +26,5 @@ spec:
     type: Git
   strategy:
     dockerStrategy:
-      dockerfilePath: src/main/docker/Dockerfile.jvm
+      dockerfilePath: Dockerfile
     type: Docker
